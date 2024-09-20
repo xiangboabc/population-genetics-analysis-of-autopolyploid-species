@@ -10,3 +10,4 @@
 "run_PVE.sh" pipelines for performing PVE
 "structure.r" code for performing population structure
 "Fst.r" code for performing Fst
+“Hs.r” code for performing Expected heterozygosity (HS) 
