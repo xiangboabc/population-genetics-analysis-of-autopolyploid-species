@@ -1,0 +1,11 @@
+args <- commandArgs()
+rep1<- as.character(args[6])
+rep2<- as.character(args[7])
+
+library(adegenet)
+library(parallel)
+data=read.table(rep1)
+data=t(data)
+a=df2genind(data, ploidy=6,ncode=1)
+H=Hs(genind2genpop(a))
+write.table(H,file=rep2,sep="\t",quote=F)
