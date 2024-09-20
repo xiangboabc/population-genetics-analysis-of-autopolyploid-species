@@ -1,6 +1,3 @@
-# population-genetics-analysis-of-autopolyploid-species
-code for analyzing population genetics of autopolyploid species
-
 ##genetics analysis of autopolyploid species
 
 ## Code and pipeline were used to perfom population structure, PCA,  phylogenetic analyses，GWAS .....

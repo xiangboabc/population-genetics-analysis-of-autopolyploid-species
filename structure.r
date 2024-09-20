@@ -1,0 +1,8 @@
+args <- commandArgs()
+rep1<- as.character(args[6])
+rep2<- as.character(args[7])
+out<- as.character(args[8])
+library(LEA)
+project = snmf(rep1, K = as.numeric(rep2), ploidy = 6,CPU=4,repetitions = 2, project = "new")
+res = Q(project, K = as.numeric(rep2), run = 2)
+write.table(res,file=out,quote=F,sep="\t")
